@@ -1,0 +1,50 @@
+@mixin container($backgroundColor: black) {
+	flex: 1;
+	width: 100%;
+	align-items: center;
+	justify-self: center;
+	background-color: $backgroundColor;
+}
+
+@mixin heading($color: white) {
+	color: $color;
+	font-size: 400%;
+	font-weight: 500;
+	margin-bottom: 0%;
+}
+
+@mixin paragraph($color: white) {
+	color: $color;
+	text-align: center;
+	font-size: x-large;
+	font-weight: 500;
+}
+
+.container {
+	display: flex;
+	@include container;
+}
+
+.introductionContainer {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	@include container($backgroundColor: transparent);
+}
+
+.heading {
+	@include heading();
+}
+
+.text {
+	@include paragraph(transparent);
+	background: linear-gradient(70deg, #211ac7, #fb5ea8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	max-width: max-content;
+}
