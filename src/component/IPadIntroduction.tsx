@@ -5,7 +5,7 @@ export default function IPadIntroduction() {
 	return (
 		<div className="container">
 			<img src={iPadImage} className="image" />
-			<div className="introductionContainer">
+			<div className="overlay">
 				<h1 className="heading">iPad Pro</h1>
 				<h2 className="text">
 					막강한 성능의
