@@ -1,4 +1,4 @@
-import "./IPadIntroduction.css";
+import "./staticStyle.css";
 import iPadImage from "./image/iPadPro.jpeg";
 
 export default function IPadIntroduction() {

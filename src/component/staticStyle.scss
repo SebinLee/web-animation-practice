@@ -3,14 +3,15 @@
 	width: 100%;
 	align-items: center;
 	justify-self: center;
+	flex-direction: column;
 	background-color: $backgroundColor;
 }
 
 @mixin heading($color: white) {
 	color: $color;
-	font-size: 400%;
-	font-weight: 500;
-	margin-bottom: 0%;
+	font-size: 350%;
+	font-weight: 700;
+	text-align: center;
 }
 
 @mixin paragraph($color: white) {
@@ -22,17 +23,26 @@
 
 .container {
 	display: flex;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	@include container;
 }
 
 .introductionContainer {
+	top: 50%;
 	display: flex;
 	position: absolute;
-	flex-direction: column;
 	@include container($backgroundColor: transparent);
 }
 
 .heading {
+	margin-bottom: 3%;
+	@include heading();
+}
+
+.headingNoMargin {
+	margin: 0;
+	padding: 0;
 	@include heading();
 }
 
