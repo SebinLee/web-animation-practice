@@ -7,7 +7,7 @@ import IPadSumamry from "./component/IPadSummary";
 
 function App() {
 	return (
-		<div>
+		<div className="background">
 			<IPadIntroduction />
 			<IPadChip />
 			<IPadXDR />
