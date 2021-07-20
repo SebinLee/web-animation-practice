@@ -1,10 +1,10 @@
 .container {
+  overflow: hidden;
   width: 100%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 100vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -16,6 +16,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: black;
 }
 
