@@ -10,7 +10,7 @@
 
 @keyframes zoomIn {
 	0% {
-		@include default(true, true);
+		@include default();
 	}
 
 	100% {
@@ -28,10 +28,45 @@
 	}
 }
 
-.zoomIn {
-	animation: 1s ease zoomIn;
+@keyframes in-animation-zoomIn {
+	0% {
+		@include zoomAnimation(5);
+	}
+
+	20% {
+		opacity: 0.1;
+	}
+
+	100% {
+		@include default;
+	}
 }
 
-.zoomOut {
-	animation: 1s ease zoomOut;
+@keyframes in-animation-textZoomIn {
+	0% {
+		width: 100vw;
+		opacity: 0;
+		@include zoomAnimation(5);
+	}
+
+	100% {
+		opacity: 0.5;
+		@include default();
+	}
+}
+
+.in-animation-textZoomIn {
+	animation: 0.7s ease in-animation-zoomIn;
+}
+
+.in-animation-zoomIn {
+	animation: 0.7s ease in-animation-zoomIn;
+}
+
+.out-animation-zoomIn {
+	animation: 0.5s ease zoomIn;
+}
+
+.out-animation-zoomOut {
+	animation: 0.5s ease zoomOut;
 }

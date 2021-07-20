@@ -20,9 +20,9 @@ function IPadIntroductionStatic() {
 function IPadIntroductionAnimated() {
 	return (
 		<div className="container">
-			<img src={iPadImage} className="image zoomOut" />
+			<img src={iPadImage} className="image out-animation-zoomOut" />
 			<div className="overlay">
-				<div className="zoomIn">
+				<div className="out-animation-zoomIn">
 					<IntroductionText />
 				</div>
 			</div>

@@ -50,13 +50,87 @@
   }
 }
 
-.zoomIn {
-  -webkit-animation: 1s ease zoomIn;
-          animation: 1s ease zoomIn;
+@-webkit-keyframes in-animation-zoomIn {
+  0% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
-.zoomOut {
-  -webkit-animation: 1s ease zoomOut;
-          animation: 1s ease zoomOut;
+@keyframes in-animation-zoomIn {
+  0% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes in-animation-textZoomIn {
+  0% {
+    width: 100vw;
+    opacity: 0;
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes in-animation-textZoomIn {
+  0% {
+    width: 100vw;
+    opacity: 0;
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.in-animation-textZoomIn {
+  -webkit-animation: 0.7s ease in-animation-zoomIn;
+          animation: 0.7s ease in-animation-zoomIn;
+}
+
+.in-animation-zoomIn {
+  -webkit-animation: 0.7s ease in-animation-zoomIn;
+          animation: 0.7s ease in-animation-zoomIn;
+}
+
+.out-animation-zoomIn {
+  -webkit-animation: 0.5s ease zoomIn;
+          animation: 0.5s ease zoomIn;
+}
+
+.out-animation-zoomOut {
+  -webkit-animation: 0.5s ease zoomOut;
+          animation: 0.5s ease zoomOut;
 }
 /*# sourceMappingURL=animatedStyle.css.map */
